@@ -2723,10 +2723,7 @@ namespace xNet
             if (httpProxy != null)
             {
                 if (KeepAlive)
-                {
                     headers["Proxy-Connection"] = "keep-alive";
-                    headers["Connection"] = "keep-alive";
-                }
                 else
                     headers["Proxy-Connection"] = "close";
 
